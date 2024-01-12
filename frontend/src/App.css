@@ -1,0 +1,102 @@
+:root {
+  --main-color: #625fff;
+  --second-color: #ffb800;
+  --tertiary-color: #ff5634;
+  --lightmain-color: #afadff;
+  --second-light: #fff1cd;
+  --tertiary-light: #ffe4df;
+  --dark-color: #383838;
+  --light-dark: #908989;
+  --light-color: #f8f8f8;
+  --fonts: "venice-blvd";
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: var(--fonts);
+  color: var(--light-color);
+}
+
+header,
+footer {
+  height: 80px;
+  background-color: var(--main-color);
+  font-family: var(--fonts);
+}
+
+footer {
+  background-color: var(--lightmain-color);
+}
+
+a {
+  text-decoration: none;
+}
+
+main {
+  min-height: calc(100vh - 80px);
+  background-color: var(--main-color);
+  padding: 1rem;
+}
+
+main > section > * {
+  padding: 0.3rem 0;
+}
+
+.main-App-h1 {
+  font-size: 3rem;
+  font-weight: 900;
+}
+
+.btn-cod {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--second-color);
+  color: var(--light-color);
+  font-size: 1rem;
+  font-size: 1rem;
+  border-radius: 12px;
+  border: 0px;
+  padding: 5px 30px;
+  width: 180px;
+  width: 180px;
+  height: 30px;
+  flex-shrink: 0;
+}
+
+/*Pour afficher / cacher les composants */
+.hide {
+  display: none;
+}
+
+.show {
+  display: initial;
+}
+
+/* media queries version Desktop */
+@media (min-width: 850px) {
+  .main-App {
+    padding: 5% 10%;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 1rem;
+  }
+  .main-App-section {
+    flex: 1.2;
+    margin: auto;
+  }
+
+  .main-App-h1 {
+    font-size: 5rem;
+  }
+  .container-logo {
+    order: -1;
+    flex: 1;
+    margin: auto;
+  }
+  .logoSection {
+    width: 60%;
+  }
+}
