@@ -7,4 +7,9 @@ export default defineConfig({
   server: {
     port: 3000,
   },
+  build: {
+    rollupOptions: {
+      external: ["@geoapify/react-geocoder-autocomplete"],
+    },
+  },
 });
