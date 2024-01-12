@@ -1,0 +1,172 @@
+{
+  "items": [
+    {
+      "id": 1,
+      "type": "Burgers",
+      "name": "Paris",
+      "prix": "9.99€",
+      "img": "./src/assets/img-menu/burger-paris.png"
+    },
+    {
+      "id": 2,
+      "type": "Burgers",
+      "name": "Rome",
+      "prix": "6.99€",
+      "img": "./src/assets/img-menu/burger-rome.png"
+    },
+    {
+      "id": 3,
+      "type": "Burgers",
+      "name": "Berlin",
+      "prix": "7.49€",
+      "img": "./src/assets/img-menu/burger-berlin.png"
+    },
+    {
+      "id": 4,
+      "type": "Burgers",
+      "name": "Madrid",
+      "prix": "8.99€",
+      "img": "./src/assets/img-menu/burger-madrid.png"
+    },
+    {
+      "id": 5,
+      "type": "Burgers",
+      "name": "Athens",
+      "prix": "6.49€",
+      "img": "./src/assets/img-menu/burger-athens.png"
+    },
+    {
+      "id": 6,
+      "type": "Burgers",
+      "name": "Lisbon",
+      "prix": "7.99€",
+      "img": "./src/assets/img-menu/burger-lisbon.png"
+    },
+    {
+      "id": 7,
+      "type": "Burgers",
+      "name": "Amsterdam",
+      "prix": "8.49€",
+      "img": "./src/assets/img-menu/burger-amsterdam.png"
+    },
+    {
+      "id": 8,
+      "type": "Burgers",
+      "name": "Vienna",
+      "prix": "9.99€",
+      "img": "./src/assets/img-menu/burger-vienna.png"
+    },
+    {
+      "id": 9,
+      "type": "MealDeal",
+      "name": "Meal Deal Paris",
+      "prix": "12.99€",
+      "img": "./src/assets/img-menu/meal_deal_paris.png"
+    },
+    {
+      "id": 10,
+      "type": "MealDeal",
+      "name": "Meal Deal Rome",
+      "prix": "13.99€",
+      "img": "./src/assets/img-menu/meal-deal-rome.png"
+    },
+    {
+      "id": 11,
+      "type": "MealDeal",
+      "name": "Meal Deal Berlin",
+      "prix": "14.49€",
+      "img": "./src/assets/img-menu/meal-deal-berlin.png"
+    },
+    {
+      "id": 12,
+      "type": "MealDeal",
+      "name": "Meal Deal Madrid",
+      "prix": "15.99€",
+      "img": "./src/assets/img-menu/meal-deal-madrid.png"
+    },
+    {
+      "id": 13,
+      "type": "MealDeal",
+      "name": "Meal Deal Athens",
+      "prix": "13.49€",
+      "img": "./src/assets/img-menu/meal-deal-athens.png"
+    },
+    {
+      "id": 14,
+      "type": "MealDeal",
+      "name": "Meal Deal Lisbon",
+      "prix": "14.99€",
+      "img": "./src/assets/img-menu/meal-deal-lisbon.png"
+    },
+    {
+      "id": 15,
+      "type": "MealDeal",
+      "name": "Meal Deal Amsterdam",
+      "prix": "15.49€",
+      "img": "./src/assets/img-menu/meal-deal-amsterdam.png"
+    },
+    {
+      "id": 16,
+      "type": "MealDeal",
+      "name": "Meal Deal Vienna",
+      "prix": "16.99€",
+      "img": "./src/assets/img-menu/meal-deal-vienna.png"
+    },
+    {
+      "id": 17,
+      "type": "Salades",
+      "name": "Chicken Salad",
+      "prix": "9.99€",
+      "img": "./src/assets/img-menu/chicken_salad.jpeg"
+    },
+    {
+      "id": 18,
+      "type": "Salades",
+      "name": "Caesar Salad",
+      "prix": "8.99€",
+      "img": "./src/assets/img-menu/caesar-salad.jpeg"
+    },
+    {
+      "id": 19,
+      "type": "Salades",
+      "name": "Greek Salad",
+      "prix": "7.99€",
+      "img": "./src/assets/img-menu/greek-salad.jpeg"
+    },
+    {
+      "id": 20,
+      "type": "Salades",
+      "name": "Vegetarian Salad",
+      "prix": "6.99€",
+      "img": "./src/assets/img-menu/vegetarian-salad.jpeg"
+    },
+    {
+      "id": 21,
+      "type": "Boissons",
+      "name": "New York Milkshake",
+      "prix": "1.99€",
+      "img": "./src/assets/img-menu/soda1.webp"
+    },
+    {
+      "id": 22,
+      "type": "Boissons",
+      "name": "Los Angeles Milkshake",
+      "prix": "1.99€",
+      "img": "./src/assets/img-menu/soda2.webp"
+    },
+    {
+      "id": 23,
+      "type": "Boissons",
+      "name": "Chicago Milkshake",
+      "prix": "2.49€",
+      "img": "./src/assets/img-menu/soda3.webp"
+    },
+    {
+      "id": 24,
+      "type": "Boissons",
+      "name": "Houston Milkshake",
+      "prix": "2.49€",
+      "img": "./src/assets/img-menu/soda4.webp"
+    }
+  ]
+}
