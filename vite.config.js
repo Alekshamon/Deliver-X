@@ -12,4 +12,9 @@ export default defineConfig({
       external: ["@geoapify/react-geocoder-autocomplete"],
     },
   },
+  build: {
+    rollupOptions: {
+      external: ["./card/Card"],
+    },
+  },
 });
