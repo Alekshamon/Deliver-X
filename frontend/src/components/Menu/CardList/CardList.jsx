@@ -1,7 +1,7 @@
 /* eslint-disable import/no-unresolved */
 import React, { useState } from "react";
 import menuItems from "../../../menuItems.json";
-import Card from "./card/Card";
+import Card from "./Card/Card";
 
 import "./cardlist.css";
 
