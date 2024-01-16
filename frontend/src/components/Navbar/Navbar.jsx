@@ -51,7 +51,11 @@ export default function Navbar() {
       </ul>
       <h3 className={`titre ${openMenu ? "titre2" : ""}`}>Deliver X</h3>
       <div>
-        <button type="button" onClick={handleMenu}>
+        <button
+          type="button"
+          onClick={handleMenu}
+          className={openMenu ? "closebar-hiden-desktop" : ""}
+        >
           <img
             src={openMenu ? close : menuBurger}
             /* le menu est il ouvert (true) ? si oui(true) exècute l'instruction 1, si non (false) exècute l'instruction 2 ;

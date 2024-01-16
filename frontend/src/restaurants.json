@@ -20,7 +20,7 @@
     "departement": 38,
     "cp": 38000,
     "ville": "Grenoble",
-    "nom": "Grenoble"
+    "nom": "Lafayette"
   },
   {
     "id": 4,
@@ -32,30 +32,46 @@
   },
   {
     "id": 5,
-    "departement": 95,
-    "cp": 95001,
-    "ville": "SOON",
-    "nom": ""
+    "departement": 67,
+    "cp": 67000,
+    "ville": "Strasbourg",
+    "nom": "Petite France"
   },
   {
     "id": 6,
     "departement": 13,
     "cp": 13001,
     "ville": "Marseille",
-    "nom": ""
+    "nom": "La Valentine"
   },
   {
     "id": 7,
     "departement": 34,
     "cp": 34400,
     "ville": "Montpellier",
-    "nom": ""
+    "nom": "Odysseum"
   },
   {
     "id": 8,
     "departement": 34,
     "cp": 34400,
     "ville": "Toulouse",
-    "nom": ""
+    "nom": "Place du Capitole"
+  },
+  {
+    "id": 9,
+    "departement": 75,
+    "cp": 75006,
+    "ville": "Paris",
+    "arrondissement": 6,
+    "nom": "Saint-Germain"
+  },
+  {
+    "id": 10,
+    "departement": 75,
+    "cp": 75008,
+    "ville": "Paris",
+    "arrondissement": 8,
+    "nom": "Champs-Elysée"
   }
 ]

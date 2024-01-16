@@ -15,7 +15,6 @@
   gap: 1rem;
   color: var(--dark-color);
   margin: 1rem 0;
-
 }
 
 .pay-container {
@@ -117,8 +116,8 @@ input:hover {
 }
 
 .btn-pay-link {
-color: var(--light-color);
-font-size: 1rem;
+  color: var(--light-color);
+  font-size: 1rem;
 }
 .btn-pay:hover {
   background-color: var(--lightmain-color);

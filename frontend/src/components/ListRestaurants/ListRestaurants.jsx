@@ -37,6 +37,7 @@ export default function ListRestaurants({ clickCities, restaurant }) {
     );
     setOpen(false);
     setSelected(!selected);
+    localStorage.setItem("idRestaurant", JSON.stringify(id));
   };
 
   return (

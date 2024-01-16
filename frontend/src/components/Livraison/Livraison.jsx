@@ -11,20 +11,27 @@ import CestParti from "../Cest-parti/CestParti";
 export default function Livraison({ deliver }) {
   const [selected, setSelected] = useState(false);
   const { setUser } = useContext(userContext);
-  const [dataAddress, setDataAddress] = useState({});
+  // const [dataAddress, setDataAddress] = useState({});
   const [address, setAddress] = useState({});
-  const handleClick = (e) => {
-    const { address_line1, value } = e.target;
-    setDataAddress({ ...dataAddress, [address_line1]: value });
-    localStorage.setItem("address", JSON.stringify(address));
+  console.info(address);
+  const handleClick = () => {
+    // const { address_line1, value } = e.target;
+    // setDataAddress({ ...dataAddress, [address_line1]: value });
     setUser(JSON.parse(localStorage.getItem("address")));
   };
   const placeSelect = (value) => {
     setSelected(true);
     setAddress(value);
+    localStorage.setItem(
+      "address 1",
+      JSON.stringify(value.properties.address_line1)
+    );
+    localStorage.setItem(
+      "address 2",
+      JSON.stringify(value.properties.address_line2)
+    );
     // setDataAddress({...value});
     // console.log('dataAddress', address);
-    // console.log("dataAddress2", value);
   };
 
   // function placeSelect(value) {

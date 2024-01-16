@@ -20,6 +20,8 @@
 
 .btn-cities {
   flex-grow: 1;
+  flex-shrink: 0;
+  flex-basis: min-content;
   max-width: 200px;
   color: var(--light-color);
   border-radius: 12px;
@@ -52,7 +54,7 @@
   outline-offset: 5px;
 }
 
-@media (max-width: 430px) {
+/* @media (max-width: 430px) {
   .cities {
     display: flex;
     flex-wrap: wrap;
@@ -69,4 +71,4 @@
     border: 1px solid transparent;
     width: fit-content;
   }
-}
+} */

@@ -4,6 +4,8 @@ import "./paiement.css";
 import arrow from "../../assets/icones/round-alt-arrow-left-svgrepo-com.svg";
 
 export default function Paiement() {
+  const userChoice = JSON.parse(localStorage.getItem("userClickcollect"));
+  // console.log("userChoice", userChoice);
   const handleSubmit = (event) => {
     event.preventDefault();
   };
@@ -18,7 +20,10 @@ export default function Paiement() {
       <div className="pay-container">
         <h2>Paiement</h2>
         <button type="submit" form="pay" className="google-pay">
-          <Link to="/paiementdone" className="btn-pay-link">
+          <Link
+            to={userChoice ? "/paiementdone" : "/validation-livraison"}
+            className="btn-pay-link"
+          >
             Google Pay
           </Link>
         </button>
@@ -71,7 +76,10 @@ export default function Paiement() {
             />
           </label>
           <button type="submit" className="btn-pay" value="Payer XX€">
-            <Link to="/paiementdone" className="btn-pay-link">
+            <Link
+              to={userChoice ? "/paiementdone" : "/validation-livraison"}
+              className="btn-pay-link"
+            >
               Payer XX€
             </Link>
           </button>

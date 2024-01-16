@@ -67,11 +67,9 @@ nav > ul > li {
 }
 
 nav > ul > li:hover {
-  color: var(--light-color);
-  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
-  border: 1px solid var(--light-color);
+  text-shadow: 0px 20px 35px rgb(255, 255, 255, 0.5);
+  transform: translateY(-5px);
 }
-
 /* classe ajouter quand le menu burger est ouvert (openMenu = true) et retirer quand le menu burger est fermé (openMenu = false).
 La position top passe de -50% (en dehors de l'écran) à 0.
 Avec cette classe, ul et son contenu est donc visible */
@@ -179,5 +177,8 @@ nav > ul > li > img {
     position: absolute;
     right: 20px;
     top: 3px;
+  }
+  .closebar-hiden-desktop {
+    display: none;
   }
 }
