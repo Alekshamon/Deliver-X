@@ -1,3 +1,4 @@
+/* eslint-disable import/no-extraneous-dependencies */
 import { useState, useContext } from "react";
 import PropTypes from "prop-types";
 import "./Livraison.css";
