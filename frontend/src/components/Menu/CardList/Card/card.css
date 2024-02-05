@@ -5,6 +5,9 @@
   background-color: #625fff;
   padding-left: 200px;
   padding-right: 200px;
+  position: fixed;
+  width: 100%;
+  z-index:100;
 }
 
 .button-filter {
@@ -17,6 +20,7 @@
   justify-content: space-around;
   align-items: center;
   flex-direction: column;
+  cursor: pointer;
 }
 
 .button-filter:hover {
@@ -39,6 +43,9 @@
   transition:
     box-shadow 0.2s ease-in-out,
     transform 0.2s ease-in-out;
+    cursor: pointer;
+    background:transparent;
+    border:whitesmoke;
 }
 
 .info-product {
@@ -62,11 +69,19 @@
 
 .card-name,
 .card-price {
-  color: var(--second-color);
+  color: var(--dark-color);
   font-size: 1.5rem;
 }
 
 .button {
+  position:absolute;
+  right:3.6rem;
+  margin:5rem 3.5rem 0 0;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  height:60px;
+  width: 150px;
   background-color: #625fff;
   color: #fff;
   padding: 5px 15px;
@@ -84,7 +99,7 @@
     );
   box-shadow: 0px 20px 35px white;
   font-weight: bold;
-  font-size: 0.68rem;
+  font-size: 1rem;
 
   border: 0;
 
@@ -95,12 +110,15 @@
   cursor: pointer;
 }
 
-.button:hover {
+/* .button:hover {
   color: #ffb800;
   z-index: 99;
-}
+} */
 
 @media screen and (min-width: 850px) {
+  .button{
+    display:none;
+  }
   .cards:hover {
     box-shadow:
       0px 10px 13px -7px,
@@ -153,11 +171,11 @@
   }
 
   .cards {
-    width: 200px;
-    height: 280px;
+    width:300px;
+    height: 400px;
   }
   .card-img img {
-    max-height: 150px;
-    width: auto;
+    /* max-height: 150px; */
+    width: 240px;
   }
 }

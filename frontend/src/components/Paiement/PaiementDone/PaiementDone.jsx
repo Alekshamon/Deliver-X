@@ -5,8 +5,9 @@ import rest from "../../../restaurants.json";
 export default function PaiementDone() {
   const restau = rest;
   const selectUserRestaurant = JSON.parse(localStorage.getItem("idRestaurant"));
-  const restauSelect = restau.find((item) => item.id === selectUserRestaurant);
-  // console.log("restauSelect", restauSelect);
+  const restauSelect = restau.find(
+    (item) => item.id === parseInt(selectUserRestaurant, 10)
+  );
   const getRandomNumber = (min, max) => {
     let minValue = min;
     let maxValue = max;
