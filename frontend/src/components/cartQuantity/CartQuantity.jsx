@@ -41,7 +41,7 @@ export default function CartQuantity({ product, products, setProducts }) {
         </button>
       </div>
       <p className="cart-price">
-        {(product.prix * product.quantity).toFixed(2)} €
+        {(parseFloat(product.prix) * product.quantity).toFixed(2)} €
       </p>
     </div>
   );

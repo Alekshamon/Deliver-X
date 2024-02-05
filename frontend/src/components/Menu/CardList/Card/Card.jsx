@@ -6,16 +6,25 @@ import "./card.css";
 import CartLink from "../../../cartLink/CartLink";
 
 export default function Card() {
-  const [cart, setCart] = useState([]);
-  // fonctionnel, simple
-  // const addToCart = (item) => {
-  //   setCart([...cart, item]);
-  // };
+  const cartUpdated = JSON.parse(localStorage.getItem("cartUpdated"));
 
-  // fonctionnel + ajout de la paire quantity + valeur à 1
+  const [cart, setCart] = useState([...cartUpdated]);
   const addToCart = (item) => {
-    setCart([...cart, { ...item, quantity: 1 }]);
+    const itemInCart = cart.find((cartItem) => cartItem.id === item.id);
+
+    if (itemInCart) {
+      const newCart = cart.map((cartItem) => {
+        if (cartItem.id === item.id) {
+          return { ...cartItem, quantity: cartItem.quantity + 1 };
+        }
+        return cartItem;
+      });
+      setCart(newCart);
+    } else {
+      setCart([...cart, { ...item, quantity: 1 }]);
+    }
   };
+
   const [selectedCategory, setSelectedCategory] = useState("All");
   const [{ items }] = useState(menuItems);
   const handleCategoryChange = (category) => {
@@ -57,7 +66,12 @@ export default function Card() {
 
       <main className="cards-all">
         {filteredItems.map((item) => (
-          <div className="cards" key={item.id}>
+          <button
+            className="cards"
+            type="submit"
+            key={item.id}
+            onClick={() => addToCart(item)}
+          >
             <div className="card-img">
               <img src={item.img} alt={item.name} />
             </div>
@@ -66,15 +80,15 @@ export default function Card() {
                 <div className="card-name">{item.name}</div>
                 <span className="card-price">{item.prix}</span>
               </div>
-              <button
+              <div
                 className="button"
-                type="submit"
-                onClick={() => addToCart(item)}
+                // type="submit"
+                // onClick={() => addToCart(item)}
               >
                 Ajouter au panier
-              </button>
+              </div>
             </div>
-          </div>
+          </button>
         ))}
         <CartLink cart={cart} />
       </main>

@@ -10,7 +10,7 @@ import Menu from "./components/Menu/Menu";
 import Contact from "./components/Contact/Contact";
 import Panier from "./components/Panier/Panier";
 import NotFound from "./components/NotFound/NotFound";
-import { UserContextProvider } from "./contexts/userContexts.jsx";
+import { UserContextProvider } from "./contexts/userContexts";
 import Paiement from "./components/Paiement/Paiement";
 import PaiementDone from "./components/Paiement/PaiementDone/PaiementDone";
 

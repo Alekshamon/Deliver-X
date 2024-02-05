@@ -15,6 +15,7 @@
   border-radius: 10px;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
   background-color: var(--light-color);
+  position:absolute;
 }
 
 .dropdown-body .false {
@@ -38,7 +39,11 @@
 
 .dropdown-body.open {
   display: block;
+  background-color: white;
+  width: 100%;
+   position:absolute;
 }
+
 
 .dropdown-item {
   padding: 10px;
@@ -73,7 +78,7 @@
 
 @media (max-width: 430px) {
   .dropdown {
-    width: 100%;
+    width: 92%;
   }
 
   .dropdown-item:active {
