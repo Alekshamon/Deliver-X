@@ -1,5 +1,5 @@
 /* eslint-disable import/no-unresolved */
-import CardList from "./cardList/cardList";
+import CardList from "./CardList/CardList";
 import "./menu.css";
 
 export default function Menu() {
